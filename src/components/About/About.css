@@ -1,0 +1,82 @@
+.container {
+  margin-top: 5%;
+  display: grid;
+  height: 95vh;
+  grid-template-areas: 
+    "sidebar sidebar sidebar sidebar sidebar"
+    "box4 box1 box1 box1 box3"
+    "box4 box1 box1 box1 box3"
+    "box5 box1 box1 box1 box2";
+  grid-template-rows: .8fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  z-index: 1000;
+}
+
+
+
+.container > * {
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  
+  
+}
+
+.box1 {
+  grid-area: box1;
+  background: url("https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(90%);
+  background-position: center;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+.box1 p {
+  text-shadow: 10px 10px 100px rgba(0, 0, 0, 5.0);
+}
+
+.box2 {
+  grid-area: box2;
+}
+.box2:hover {
+  background-color: greenyellow;
+}
+
+.box3 {
+  grid-area: box3;
+  
+}
+
+.box4 {
+  grid-area: box4;
+  
+}
+
+.box5 {
+  grid-area: box5;
+  
+}
+
+.sidebar {
+  grid-area: sidebar;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white !important;
+  color: black !important;
+  opacity: 75%;
+}
+
+.footer {
+  grid-area: footer;
+}
