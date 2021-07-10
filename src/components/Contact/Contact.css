@@ -1,0 +1,14 @@
+.contact-form {
+    width: 50%;
+    height: 80vh;
+}
+
+.contact-form-container {
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 50%;
+    height: 50%;
+}

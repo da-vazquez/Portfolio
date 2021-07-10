@@ -1,82 +1,161 @@
 .container {
-  margin-top: 5%;
-  display: grid;
-  height: 95vh;
-  grid-template-areas: 
-    "sidebar sidebar sidebar sidebar sidebar"
-    "box4 box1 box1 box1 box3"
-    "box4 box1 box1 box1 box3"
-    "box5 box1 box1 box1 box2";
-  grid-template-rows: .8fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  z-index: 1000;
-}
-
-
-
-.container > * {
-  background-color: black;
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-areas: 
+      "box-left box-left box-right box-right"
+      "box-left box-left box-right box-right"
+      "box-left box-left box-right box-right";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    z-index: 1000;
+  }
   
+  .container > * {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
   
-}
+  .box-left {
+    grid-area: box-left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    background-color: #dadada;
+  }
 
-.box1 {
-  grid-area: box1;
-  background: url("https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-size: cover;
-  background-repeat: no-repeat;
-  filter: brightness(90%);
-  background-position: center;  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 30px;
-}
+  .box-left h3 {
+    font-size: 35px;
+    color: black;
+    font-weight: 800;
+    font-family: sans-serif;
+    width: 210px;
+    letter-spacing: 2.5px;
+    margin-bottom: 0;
+  }
 
-.box1 p {
-  text-shadow: 10px 10px 100px rgba(0, 0, 0, 5.0);
-}
-
-.box2 {
-  grid-area: box2;
-}
-.box2:hover {
-  background-color: greenyellow;
-}
-
-.box3 {
-  grid-area: box3;
+  .box-left p {
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: left;
+    color: #523e3e;
+    margin-top: 8px;
+  }
   
-}
+  .box-right {
+    grid-area: box-right;
+    display: grid;
+    padding: 20px;
+    grid-template-areas: 
+      "javascript react node github"
+      "database html5 css3 python";
+    grid-auto-rows: auto(4, 1fr);
+    grid-auto-columns: auto(4, 1fr);
+    background-color:#dadada;
+  }
 
-.box4 {
-  grid-area: box4;
+  .box-right > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    color: black;
+    border: none;
+  }
+
+  .box-right > i:hover {
+    color: #00ffff;
+    transform: scale(1.3);
+    transition: 800ms ease-out !important;
+  }
+
+
+
+  .js-square {
+    grid-area: javascript;
+    
+  }
+
+  .react {
+    grid-area: react;
+  }
+
+  .node {
+    grid-area: node;
+  }
+
+  .github {
+    grid-area: github;
+    
+  }
+
+  .database {
+    grid-area: postgres;
+    
+  }
+
+  .html5 {
+    grid-area: html5;
+    
+  }
+
+  .css3-alt {
+    grid-area: css3;
+    
+  }
+
+  .python {
+    grid-area: python;
+    
+  }
+
+
+@media screen and (max-width: 850px) {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+      "box-left"
+      "box-right";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;;
+    z-index: 1000;
+  }
+
+  .box-left {
+    grid-area: box-left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    background-color: #1af4ff;
+  }
   
-}
+  .box-left p {
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: left;
+    width: 550px;
+    color: #523e3e;
+    margin-top: 8px;
+  }
 
-.box5 {
-  grid-area: box5;
-  
-}
-
-.sidebar {
-  grid-area: sidebar;
-  font-size: 45px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: white !important;
-  color: black !important;
-  opacity: 75%;
-}
-
-.footer {
-  grid-area: footer;
+  .box-right {
+    grid-area: box-right;
+    display: grid;
+    grid-gap: 40px;
+    padding: 100px;
+    grid-template-areas: 
+      "javascript react" 
+      "node express"
+      "postgres html5"
+       "css3 python";
+    grid-auto-rows: auto(4, 1fr);
+    grid-auto-columns: auto(2, 1fr);
+    /* grid auto rows */
+    background-color: #1af4ff;
+  }
 }

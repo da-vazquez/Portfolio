@@ -7,6 +7,7 @@ video {
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   z-index: -1;
   background-size: cover;
+  filter:brightness(55%)
 }
 
 
@@ -46,7 +47,53 @@ video {
 }
 
 .hero-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 32px;
+  min-width: 600px;
+  min-height: 40px;
+}
+
+.hero-btns > button {
+  width: 250px;
+  height: 100%;
+  padding: 12px 16px;
+  font-size: 25px;
+  border-radius: 16px;
+  border: none;
+  text-transform: lowercase;
+  letter-spacing: 2.5px;
+}
+
+.fa-mouse-pointer {
+  margin-left: .5em;
+}
+
+.normal {
+  background-color: #00ffff;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+}
+
+.normal:hover {
+  background-color: black;
+  color: white;
+  font-family: 'Staatliches', cursive;
+  font-weight: bold;
+  transition: 300ms ease-in;
+}
+
+.danger {
+  background-color: transparent;
+  font-family: 'Staatliches', cursive;
+  border: 6px solid #00ffff !important;
+  color: white;
+}
+
+.danger:hover {
+  border: 6px solid red !important;
+  transition: 300ms ease-in;
 }
 
 .hero-btns .btn {

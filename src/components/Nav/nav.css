@@ -28,15 +28,15 @@
   height: 100%;
   margin-left: 5px;
   width: 120px;
-  font-size: 16px;
-  background-color: black;
+  font-size: 18px;
+  background-color: transparent;
   color: white;
   cursor: pointer;
 }
 
 .nav button:hover {
-  border-bottom: 5px solid #00ffff;
-  transition: 700ms;
+  border-bottom: 4px solid #00ffff;
+  transition: 150ms ease-in;
 }
 
 .nav-link {
