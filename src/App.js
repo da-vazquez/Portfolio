@@ -1,7 +1,8 @@
 import React from 'react';
 import Nav from './components/Nav/Nav'
 import HeroSection from './components/HeroSection/HeroSection.js';
-import About2 from './components/About/About2.js';
+import About from './components/About/About.js';
+import Contact from  './components/Contact/Contact';
 import "./App.css"
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div className='App'>
       <Nav />
       <HeroSection />
-      <About2 />
+      <About/>
     </div>
   );
 }

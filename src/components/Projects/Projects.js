@@ -1,7 +1,7 @@
 import react from 'react'
 
 
-const Home = () => {
+const Projects = () => {
 
 
 
@@ -20,4 +20,4 @@ return (
 
 
 
-export default Home;
+export default Projects;
