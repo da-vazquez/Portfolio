@@ -1,14 +1,231 @@
-.contact-form {
-    width: 50%;
-    height: 80vh;
+.contact-section {
+    display: grid;
+    width: 100%;
+    height: 60vh;
+    grid-template-areas:
+        "contact-text contact-form"
+        "contact-text contact-form";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: #dadada;
 }
 
-.contact-form-container {
+.contact-form {
+    grid-area: contact-form;
     display: flex;
-    
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    overflow: hidden;
+    border-radius: 25px;
+    width: 60%;
+    height: 80%;
+    color: white;
+    background-color: black;  
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+}
+
+.text-items h2 {
+    color: #00ffff;
+    padding: 10px;
+    font-weight: 800;
+    border-bottom: 16px dashed white;
+}
+
+.fa-hand-point-right {
+    font-size: 65px;
+    color: white;
+    margin-left: 10px;
+}
+
+.contact-text {
+    grid-area: contact-text;
+    background-color: #444444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black; 
+    width: 100%;
+    height: 100%;
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+    border-right: 15px solid cyan;
+}
+    
+.submit-button {
+    height: 50px;
+    width: 250px;
+    margin-top: 35px;
+    align-self: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: transparent;
+    font-family: 'Staatliches', cursive;
+    box-shadow: inset 0 0 8px rgba(252, 248, 248, 0.897);
+    letter-spacing: 2.5px;
+    border: 6px solid #00ffff !important;
+    cursor: pointer;
+    color: white;
+}
+  
+.submit-button:hover {
+    border: 6px solid limegreen !important;
+    color: limegreen;
+    transition: 300ms ease-in;
+}
+  
+  
+input {
+    height: 15px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1.5px;
+}
+
+#name, #phone, #email, #message {
+    font-size: 18px;
+    font-family: sans-serif !important;
+    background-color: white;
+}
+  
+.form-label {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2.5px;
+}
+  
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 50%;
-    height: 50%;
+    height: 80%;
+}
+
+
+@media screen and (max-width: 1400px) {
+    .contact-section {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-areas:
+            "contact-text"
+            "contact-form";
+        grid-template-columns: 1fr;
+        grid-template-rows: .3333fr 1fr;
+        background-color: #444444;
+    }
+
+    .text-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-items h2 {
+        color: #00ffff;
+        padding: 16px;
+        width: 95%;
+        font-size: 40px;
+        font-weight: 800;
+        border: none;
+    }
+
+    .fa-hand-point-right {
+        transform: rotate(90deg);
+    }
+
+    #name, #phone, #email, #message {
+        font-size: 18px;
+        font-family: sans-serif !important;
+        background-color: white;
+    }
+      
+    .form-label {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        margin-bottom: 0;
+        padding: 0;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 1.5px;
+    }
+      
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 55%;
+        height: 90%;
+    }
+
+    .contact-form {
+        width: 50%;
+        height: 60%;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+    #name, #phone, #email, #message {
+        font-size: 14px;
+        font-family: sans-serif !important;
+        background-color: white;
+    }
+
+    .contact-form {
+        width: 80%;
+        height: 90%; 
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .contact-section {
+        background-color: #444444;
+    }
+
+    #name, #phone, #email, #message {
+        font-size: 12px;
+    }
+
+    .contact-form {
+        width: 80%;
+        height: 80%;
+    }
+
+    .submit-button {
+        height: 50px;
+        width: 200px;
+        margin-left: 15px;
+    }
+
+    input {
+        height: 8px;
+    }
+
+    .text-items h2 {
+        color: #00ffff;
+        padding: 10px;
+        width: 95%;
+        font-size: 22px;
+        font-weight: 800;
+        border: none;
+    }
+
+    .fa-hand-point-right {
+        font-size: 35px;
+    }
 }

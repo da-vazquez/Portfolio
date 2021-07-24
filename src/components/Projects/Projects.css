@@ -1,0 +1,220 @@
+.projects-container {
+    width: 100%;
+    height: 1100px;
+    background-color: lightgray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2.0px;
+}
+
+
+.project-button {
+  width: 180px;
+  height: 35px;
+  padding: 10px 14px;
+  font-size: 32px;
+  border-radius: 16px;
+  margin-top: 80px;
+  background-color: darkgray;
+  font-family: 'Staatliches', cursive;
+  border: 6px solid #00ffff !important;
+  color: white;
+  letter-spacing: 3.5px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.project-button:hover {
+  border: 6px solid limegreen !important;
+  color: limegreen;
+  transition: 500ms ease-in;
+  background-color: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "project-item-1 project-item-1 project-item-2 project-item-2"
+    "project-item-3 project-item-3 project-item-4 project-item-5";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    width: 90%;
+    
+}
+
+.projects-grid > div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    filter: brightness(0.9);
+    
+}
+
+.projects-grid h2 {
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: black;
+    height: 40px;
+    opacity: 0.7;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.projects-grid h2:hover {
+    opacity: 1.0;
+    transition: 400ms;
+}
+
+
+.projects-grid > div:hover {
+    transform: scale(1.025);
+    transition: 600ms;
+}
+
+.project-item-1 {
+    grid-area: project-item-1;
+    background-image: url("https://cdn.pixabay.com/photo/2015/05/10/21/17/cookbook-761588_960_720.jpg");
+}
+
+.project-item-2 {
+    grid-area: project-item-2;
+    background: url("https://cdn.pixabay.com/photo/2015/04/10/17/03/pots-716579_960_720.jpg");
+}
+
+.project-item-3 {
+    grid-area: project-item-3;
+    background: url("https://cdn.pixabay.com/photo/2017/04/25/05/45/basketball-2258651_960_720.jpg");
+}
+
+.project-item-4 {
+    grid-area: project-item-4;
+    background: url("https://cdn.pixabay.com/photo/2017/07/31/18/28/room-2559790_960_720.jpg");
+}
+
+.project-item-5 {
+    grid-area: project-item-5;
+    background: url("https://cdn.pixabay.com/photo/2018/07/31/22/08/lion-3576045_960_720.jpg");
+}
+
+
+@media screen and (max-width: 550px) {
+    .projects-container {
+        width: 100%;
+        height: 1100px;
+        background-color: lightgray;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 2.0px;
+    }
+
+    .projects-grid {
+        grid-template-areas: 
+        "project-item-1"
+        "project-item-2"
+        "project-item-3"
+        "project-item-4"
+        "project-item-5";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        height: 100%;
+        width: 100%;
+        grid-gap: 9px;
+    }
+
+    .projects-grid > div:hover {
+        transform: scale(1);
+    }
+
+    .projects-grid h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+        padding: 10px;
+        background-color: black;
+        height: 40px;
+        opacity: 0.7;
+        min-width: 150px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .projects-grid > div {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        filter: brightness(0.9);
+    }
+
+    .project-button {
+        width: 180px;
+        height: 35px;
+        padding: 10px 14px;
+        font-size: 32px;
+        border-radius: 16px;
+        margin-top: 80px;
+        background-color: darkgray;
+        font-family: 'Staatliches', cursive;
+        border: 6px solid #00ffff !important;
+        color: white;
+        letter-spacing: 3.5px;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+      
+      .project-button:hover {
+        border: 6px solid limegreen !important;
+        color: limegreen;
+        transition: 500ms ease-in;
+        background-color: white;
+      }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .projects-grid {
+        width: 95%;
+    }
+
+    .project-button {
+        width: 100px;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 414px) {
+    .project-button {
+        width: 80px;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}

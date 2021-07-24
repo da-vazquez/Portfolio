@@ -4,13 +4,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 AOS.init({
-  duration: 1200,
+  duration: 1000,
   easing: 'ease-in-out-back'
 })
 
 
 const About = () => (
-  <div className="container">
+  <div className="about-grid" id="about">
     <div className='box-left'>
         <h3>About</h3>
         <p>I'm a Full Stack Web Developer from Phoenix, Arizona. 

@@ -1,41 +1,117 @@
-import './Contact.css'
+import React from 'react';
+import { useFormik } from 'formik';
+import "./Contact.css";
 
-const ContactForm = () => {
-  return (
-    <div className="contact-form">
-      <h1>Contact Form</h1>
-      <form className="contact-form-container">
-        <div className="form-label">
-          <label htmlFor="name">Name</label>
-          <input type="text" className="form-input" id="name" placeholder="Name" />
-          </div>
-        <div className="form-label">
-          <label htmlFor="email">Email</label>
-          <input type="email" className="form-input" id="email" placeholder="Email" />
-          </div>
-        <div className="form-label">
-          <label htmlFor="phone">Email</label>
-          <input type="text" className="form-input" id="phone" placeholder="Phone Number" />
-          </div>
-        <div className="form-label">
-          <label htmlFor="message">Message</label>
-          <textarea className="form-input" id="message" placeholder="Message" />
-          </div>
-        <div className="form-label">
-          <label htmlFor="submit">Select from the following:</label>
-          <select className="form-input" id="submit" type="dropdown">
-            <option value="">--Select--</option>
-            <option value="/">Job Offer</option>
-            <option value="/">Collab on Project</option>
-            <option value="/">Technical Question</option>
-            <option value="/">Website issue</option>
-            </select>
-          </div>
 
-        <button type="submit" className="btn btn-default">Submit</button>
-      </form>
+const validate = values => {
+  const errors = {};
+ 
+    if (!values.username) {
+    errors.username = 'username required';
+    } else if (values.username.length < 6) {
+    errors.username = 'Username must be at least 6 characters';
+    }
+ 
+    if (!values.password) {
+      errors.password = 'password required';
+    } else if (values.password.length < 6) {
+      errors.password = 'Password must be at least 6 characters';
+    }
+ 
+   return errors;
+ };
+ 
+const ContactForm = (props) => {
+
+  const formik = useFormik({
+    initialValues: {
+      name: '',
+      phone: '',
+      email: '',
+      message: ''
+     }
+     ,
+      validate,
+      
+      onSubmit: async(values) => {
+        console.log(values)
+        FormReset();
+     }}
+     )
+
+     const FormReset = () => {
+      Array.from(document.querySelectorAll("input")).forEach(
+        input => (input.value = ""))
+      
+    }
+
+    /* {formik.errors.username ? <div style={{color: 'red'}}>{formik.errors.name}</div> : null}
+    {formik.errors.password ? <div style={{color: 'red'}}>{formik.errors.phone}</div> : null}
+    {formik.errors.password ? <div style={{color: 'red'}}>{formik.errors.email}</div> : null}
+    {formik.errors.password ? <div style={{color: 'red'}}>{formik.errors.message}</div> : null} */
+   
+    return (
+      <div className="contact-section" id="contact">
+      
+      <div className= 'contact-form'>
+        <form onSubmit={formik.handleSubmit}>
+        <label className="form-label">Name:</label>
+        <input
+          id='name'
+          placeholder='enter name'
+          name='name'
+          type='text'
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.name}
+        />
+ 
+        <label className="form-label">Phone Number:</label>
+        <input
+          id='phone'
+          placeholder='enter phone number'
+          name='phone'
+          type='text'
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.phone}
+        />
+
+        <label className="form-label">Email:</label>
+        <input
+          id='email'
+          placeholder='enter email address'
+          name='email'
+          type='email'
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.email}
+        />
+
+        <label className="form-label">Message:</label>
+        <input
+          id='message'
+          placeholder='enter message'
+          name='message'
+          type='text'
+          onChange={formik.handleChange}
+          onBlur={formik.handleBlur}
+          value={formik.values.message}
+        />
+
+      <button className='submit-button' type='submit'>Submit</button>
+    </form>
+  </div>
+
+    <div className='contact-text'>
+      <div className='text-items'>
+        <h2>I'd love to hear from you <span>
+        <i class="far fa-hand-point-right"></i></span></h2>
+      </div>
     </div>
-  )
-}
+  </div>
+  );
+ };
 
-export default ContactForm
+
+ export default ContactForm;

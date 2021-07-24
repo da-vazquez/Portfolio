@@ -1,0 +1,163 @@
+.grabber-grid h3 {
+    font-size: 2.5em;
+    color: #00ffff;
+}
+
+.grabber-grid p {
+    font-size: 1.25em;
+    font-family: sans-serif;
+    letter-spacing: 1.5px !important;
+    font-weight: bold;
+    min-width: 450px;
+}
+
+.grabber-grid > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 2.5px;
+    text-align: center;
+    padding: 40px;
+    filter: brightness(0.95);
+    height: 600px;
+}
+
+.grabber-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "grabber-left grabber-middle grabber-right";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+}
+
+.grabber-left {
+    grid-area: grabber-left;
+    
+    
+}
+
+.grabber-middle {
+    grid-area: grabber-middle;
+    
+}
+
+.grabber-right {
+    grid-area: grabber-right;
+    
+}
+
+.fa-tachometer-alt {
+    font-size: 150px;
+    margin-bottom: 10px;
+    
+}
+
+
+.fa-tools {
+    font-size: 150px;
+    margin-bottom: 10px;
+}
+
+.fa-hand-holding-heart {
+    font-size: 150px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .grabber-grid {
+        grid-template-areas:
+        "grabber-left" 
+        "grabber-middle"
+        "grabber-right";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .grabber-grid p {
+        font-size: 1.25em;
+        font-family: sans-serif;
+        letter-spacing: 1.5px !important;
+        font-weight: bold;
+        min-width: 350px;
+    }
+
+    .grabber-grid > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 2.5px;
+        text-align: center;
+        padding: 12px;
+        filter: brightness(0.95);
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .grabber-grid {
+        width: 100%;
+        grid-template-areas:
+        "grabber-left" 
+        "grabber-middle"
+        "grabber-right";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .grabber-grid p {
+        font-size: 15px;
+        font-family: sans-serif;
+        letter-spacing: 1px !important;
+        font-weight: bold;
+        min-width: 50%;
+    }
+
+    .grabber-grid > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: black;
+        font-family: 'Staatliches', cursive;
+        letter-spacing: 2.5px;
+        text-align: center;
+        padding: 12px;
+        filter: brightness(0.95);
+        height: 500px;
+    }
+
+    .grabber-grid i {
+        font-size: 110px;
+    }
+
+}
+
+@media screen and (max-width: 1350px) {
+    .grabber-grid {
+        grid-template-areas:
+        "grabber-left" 
+        "grabber-middle"
+        "grabber-right";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+
+   
+
+}
