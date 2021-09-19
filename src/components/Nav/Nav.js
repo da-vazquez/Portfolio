@@ -33,7 +33,7 @@ return (
         <Link className="nav-link" to="home" smooth={true} duration={1000}>Home</Link>
         <Link className="nav-link" to="about" smooth={true} duration={1000}>About</Link>
         <Link className="nav-link" to="projects" smooth={true} duration={1000}>Showcase</Link>
-        <Link className="nav-link" to="grabber" smooth={true} duration={1000}>Resume</Link>
+        <Link className="nav-link" to="grabber" smooth={true} duration={1000}>Results</Link>
         <Link className="nav-link" to="contact" smooth={true} duration={1000}>Contact</Link>
       </div>
 
