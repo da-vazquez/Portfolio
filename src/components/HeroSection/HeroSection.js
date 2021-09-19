@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-
+import { FaMousePointer } from 'react-icons/fa';
 
 
 const HeroSection = () => {
@@ -12,7 +12,7 @@ const HeroSection = () => {
       <h4>Full Stack Web Developer</h4>
       <div className='hero-btns'>
         <button className="normal">Learn more</button>
-        <button className="danger">Contact Now<span><i class="fas fa-mouse-pointer"></i></span></button>
+        <button className="danger">Contact Now<span><FaMousePointer className="fa-mouse-pointer"/></span></button>
 
       </div>
     </div>
