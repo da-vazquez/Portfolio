@@ -50,7 +50,6 @@
     grid-template-rows: 1fr 1fr;
     height: 100%;
     width: 90%;
-    
 }
 
 .projects-grid > div {
@@ -65,7 +64,7 @@
     
 }
 
-.projects-grid h2 {
+.projects-grid a {
     font-size: 1.5em;
     padding: 10px;
     background-color: black;
@@ -74,9 +73,11 @@
     min-width: 150px;
     text-align: center;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
-.projects-grid h2:hover {
+.projects-grid a:hover {
     opacity: 1.0;
     transition: 400ms;
 }
@@ -89,7 +90,7 @@
 
 .project-item-1 {
     grid-area: project-item-1;
-    background-image: url("https://cdn.pixabay.com/photo/2015/05/10/21/17/cookbook-761588_960_720.jpg");
+    background-image: url("https://cdn.pixabay.com/photo/2017/12/22/08/01/school-supplies-3033204_960_720.jpg");
 }
 
 .project-item-2 {
@@ -104,7 +105,7 @@
 
 .project-item-4 {
     grid-area: project-item-4;
-    background: url("https://cdn.pixabay.com/photo/2017/07/31/18/28/room-2559790_960_720.jpg");
+    background: url("https://cdn.pixabay.com/photo/2015/04/15/14/55/calculator-723917_960_720.jpg");
 }
 
 .project-item-5 {
@@ -144,7 +145,7 @@
         transform: scale(1);
     }
 
-    .projects-grid h2 {
+    .projects-grid a {
         display: flex;
         align-items: center;
         justify-content: center;

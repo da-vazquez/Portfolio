@@ -34,7 +34,9 @@
 }
 
 .fa-hand-point-right {
-    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    font-size: 180px;
     color: white;
     margin-left: 10px;
 }
@@ -174,7 +176,6 @@ form {
         width: 50%;
         height: 60%;
     }
-
 }
 
 
@@ -188,6 +189,10 @@ form {
     .contact-form {
         width: 80%;
         height: 90%; 
+    }
+
+    .fa-hand-point-right {
+        display: none;
     }
 }
 
@@ -226,6 +231,6 @@ form {
     }
 
     .fa-hand-point-right {
-        font-size: 35px;
+        display: none;
     }
 }

@@ -1,7 +1,17 @@
 import React from 'react';
 import './About.css';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+import { 
+  SiJavascript,
+  SiReact,
+  SiNodeDotJs,
+  SiGithub,
+  SiPostgresql,
+  SiHtml5,
+  SiCss3,
+  SiPython
+ } from 'react-icons/si';
 
 AOS.init({
   duration: 1000,
@@ -22,14 +32,14 @@ const About = () => (
           build and manage RESTFUL API's that are compliant to the client's specifications and easily consumed by the frontend Web App.</p>    
     </div>
     <div className='box-right'>
-        <i data-aos="slide-left" data-aos-once="true" class="fab fa-js-square"></i>
-        <i data-aos="slide-left" data-aos-once="true" class="fab fa-react"></i>
-        <i data-aos="slide-left" data-aos-once="true" class="fab fa-node"></i>
-        <i data-aos="slide-left" data-aos-once="true"  class="fab fa-github"></i>
-        <i data-aos="slide-left" data-aos-once="true" class="fas fa-database"></i>
-        <i data-aos="slide-left" data-aos-once="true" class="fab fa-html5"></i>
-        <i data-aos="slide-left" data-aos-once="true" class="fab fa-css3-alt"></i>
-        <i data-aos="slide-left" data-aos-once="true" class="fab fa-python"></i>
+      <div className="js" data-aos="slide-left" data-aos-once="true"><SiJavascript/></div>
+      <div className="react" data-aos="slide-left" data-aos-once="true"><SiReact/></div>
+      <div className="node" data-aos="slide-left" data-aos-once="true"><SiNodeDotJs/></div>
+      <div className="github" data-aos="slide-left" data-aos-once="true"><SiGithub/></div>
+      <div className="postgres" data-aos="slide-left" data-aos-once="true"><SiPostgresql/></div>
+      <div className="css3" data-aos="slide-left" data-aos-once="true"><SiCss3/></div>
+      <div className="html5" data-aos="slide-left" data-aos-once="true"><SiHtml5/></div>
+      <div className="python" data-aos="slide-left" data-aos-once="true"><SiPython/></div>
     </div>
   </div>
 );

@@ -1,7 +1,14 @@
 import React from 'react';
 import { useFormik } from 'formik';
 import "./Contact.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { FaHandPointRight } from 'react-icons/fa';
 
+AOS.init({
+  duration: 1000,
+  easing: 'ease-in-out-back'
+})
 
 const validate = values => {
   const errors = {};
@@ -105,8 +112,8 @@ const ContactForm = (props) => {
 
     <div className='contact-text'>
       <div className='text-items'>
-        <h2>I'd love to hear from you <span>
-        <i class="far fa-hand-point-right"></i></span></h2>
+        <div className="fa-hand-point-right" data-aos="slide-right" data-aos-once="true"><FaHandPointRight/></div>
+        <h2>I'd love to hear from you</h2>
       </div>
     </div>
   </div>

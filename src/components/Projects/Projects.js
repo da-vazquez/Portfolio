@@ -10,24 +10,23 @@ const Projects = () => {
     <div className="projects-container" id="projects">
       <div className="projects-grid">
         <div className="project-item-1">
-          <h2>Legacies Cookbook</h2>
+          <a href="https://github.com/da-vazquez/Portfolio" target="_blank" rel="noopener noreferrer">Scribble Stadium</a>
         </div>
         <div className="project-item-2">
-        <h2>Water My Plants API</h2>
+          <a href="https://github.com/Water-My-Plants-PTCT/plants-backend" target="_blank" rel="noopener noreferrer">Water My Plants</a>
         </div>
         <div className="project-item-3">
-          <h2>Sunny</h2>
+          <a href="https://github.com/da-vazquez/sunny" target="_blank" rel="noopener noreferrer">Sunny</a>
         </div>
         <div className="project-item-4">
-          <h2>Showzilla</h2>
+          <a href="https://github.com/da-vazquez/CSS-Grid-Calculator" target="_blank" rel="noopener noreferrer">Super Calculator</a>
         </div>
         <div className="project-item-5">
-          <h2>African Marketplace</h2>
+          <a href="https://github.com/da-vazquez/African_Marketplace" target="_blank" rel="noopener noreferrer">African Marketplace</a>
         </div>
       </div>
       <a className='project-button' href="https://github.com/da-vazquez" target="_blank" rel="noopener noreferrer">see more</a>
     </div>
- 
   )
 }
 
