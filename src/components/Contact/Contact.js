@@ -26,7 +26,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let response = await fetch("http://localhost:5000/contact", {
+      let response = await fetch("https://contact-server-dv.herokuapp.com/contact", {
         method: "POST",
         headers: {"Content-Type": "application/json;charset=utf-8",
           },
