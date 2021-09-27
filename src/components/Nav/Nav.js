@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './nav.css'
 import { Link } from 'react-scroll'
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
   const [button, setButton] = useState(true);
@@ -42,7 +43,7 @@ return (
         
     {button ?
     <div className="nav-mobile">
-      <div className="bars"><i class="fas fa-bars" onClick={menuHandler}></i></div>
+      <div className="bars"><FaBars id="menu-bars" onClick={menuHandler}/></div>
       <div className={menu ? "link-1" : "link-inactive"}><button>Home</button></div>
       <div href="#about" className={menu ? "link-2" : "link-inactive"}><button>About</button></div>
       <div className={menu ? "link-3" : "link-inactive"}><button>Showcase</button></div>
