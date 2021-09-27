@@ -7,7 +7,7 @@ const HeroSection = () => {
 
   return (
     <div className='hero-container' id="home">
-      <video src='/videos/phx.mp4' autoPlay muted loop='true'/>
+      <video src='/videos/phx.mp4' autoPlay muted loop={true}/>
       <h2>Daniel Vazquez</h2>
       <h4>Full Stack Web Developer</h4>
       <div className='hero-btns'>
