@@ -20,6 +20,23 @@ strong {
   margin-right: 2px;
 }
 
+.footer-icons-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+#github, #linkedin, #medium {
+  color: white;
+  font-size: 20px;
+}
+
+#github:hover, #linkedin:hover, #medium:hover {
+  color: #00ffff;
+  transform: scale(1.25);
+  transition: 500ms;
+}
+
+
 
 @media screen and (max-width: 414px) {
   .footer {
