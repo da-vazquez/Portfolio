@@ -81,7 +81,6 @@
      "link-5";
     grid-template-columns: 1fr;
     grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr;
-    transition: 1.5s;
   }
 
   .nav-mobile > div {
@@ -93,25 +92,13 @@
     text-transform: uppercase;
   }
 
-  .nav-mobile button {
-    width: 100%;
-    height: 100%;
-    font-size: 18px;
-    text-transform: uppercase;
-    border: none;
-    color: white;
-    background-color: black;
-    cursor: pointer;
-    font-family: sans-serif;
-  }
-
   .nav-mobile button:focus {
     color: cyan;
   }
 
   .nav-mobile .link-inactive {
-    display: none;
-    transition: 1500ms;
+    transform: translateX(500px);
+    transition: 800ms;
   }
 
   .fa-bars {
@@ -127,21 +114,81 @@
 
   .link-1 {
     grid-area: link-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 5px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-family: sans-serif;
   }
 
   .link-2 {
     grid-area: link-2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 5px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-family: sans-serif;
   }
 
   .link-3 {
     grid-area: link-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 5px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-family: sans-serif;
   }
 
   .link-4 {
     grid-area: link-4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 5px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-family: sans-serif;
   }
 
   .link-5 {
     grid-area: link-5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 5px solid black;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-family: sans-serif;
   }
 }
