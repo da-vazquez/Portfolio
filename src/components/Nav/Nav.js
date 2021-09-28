@@ -43,12 +43,12 @@ return (
         
     {button ?
     <div className="nav-mobile">
-      <div className="bars"><FaBars id="menu-bars" onClick={menuHandler}/></div>
-      <div className={menu ? "link-1" : "link-inactive"}><button>Home</button></div>
-      <div href="#about" className={menu ? "link-2" : "link-inactive"}><button>About</button></div>
-      <div className={menu ? "link-3" : "link-inactive"}><button>Showcase</button></div>
-      <div className={menu ? "link-4" : "link-inactive"}><button>Resume</button></div>
-      <div className={menu ? "link-5" : "link-inactive"}><button>Contact</button></div>
+      <Link className="bars"><FaBars id="menu-bars" onClick={menuHandler}/></Link>
+      <Link className={menu ? "link-1" : "link-inactive"}to="home" smooth={true} duration={500}>Home</Link>
+      <Link className={menu ? "link-2" : "link-inactive"}to="about" smooth={true} duration={500}>About</Link>
+      <Link className={menu ? "link-3" : "link-inactive"}to="projects" smooth={true} duration={500}>Showcase</Link>
+      <Link className={menu ? "link-4" : "link-inactive"}to="grabber" smooth={true} duration={500}>Results</Link>
+      <Link className={menu ? "link-5" : "link-inactive"}to="contact" smooth={true} duration={500}>Contact</Link>
       </div>
       : null }
     </div>
