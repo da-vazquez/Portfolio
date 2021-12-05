@@ -1,7 +1,10 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: transparent;
+}
+
+.App {
+  background: linear-gradient(90deg, rgb(57 9 66) 0%, hsl(263deg 44% 8%) 30%);
 }
 
 
