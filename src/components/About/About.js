@@ -20,7 +20,7 @@ AOS.init({
 
 
 const About = () => (
-  <div className="about-grid" id="about">
+  <div className='about-grid'>
     <div className='box-left'>
         <h3>About</h3>
         <p>My name is Daniel! I'm a Full Stack Web Developer from Phoenix, AZ. I love to dabble in various frontend and backend code and I'm always on the hunt for the latest and greatest technologies. I have a passion for tech and I strive to make the world a greater place by providing people with cutting-edge products that enrich their lives. I'm always looking to collaborate, 
@@ -31,14 +31,14 @@ const About = () => (
           build and manage RESTFUL API's that are compliant to the client's specifications and easily consumed by the frontend Web App.</p>    
     </div>
     <div className='box-right'>
-      <div className="js" data-aos="slide-left" data-aos-once="true"><SiJavascript/></div>
-      <div className="react" data-aos="slide-left" data-aos-once="true"><SiReact/></div>
-      <div className="node" data-aos="slide-left" data-aos-once="true"><SiNodeDotJs/></div>
-      <div className="github" data-aos="slide-left" data-aos-once="true"><SiGithub/></div>
-      <div className="postgres" data-aos="slide-left" data-aos-once="true"><SiPostgresql/></div>
-      <div className="css3" data-aos="slide-left" data-aos-once="true"><SiCss3/></div>
-      <div className="html5" data-aos="slide-left" data-aos-once="true"><SiHtml5/></div>
-      <div className="python" data-aos="slide-left" data-aos-once="true"><SiPython/></div>
+      <div className='js' data-aos='slide-left' data-aos-once='true'><SiJavascript/></div>
+      <div className='react' data-aos='slide-left' data-aos-once='true'><SiReact/></div>
+      <div className='node' data-aos='slide-left' data-aos-once='true'><SiNodeDotJs/></div>
+      <div className='github' data-aos='slide-left' data-aos-once='true'><SiGithub/></div>
+      <div className='postgres' data-aos='slide-left' data-aos-once='true'><SiPostgresql/></div>
+      <div className='css3' data-aos='slide-left' data-aos-once='true'><SiCss3/></div>
+      <div className='html5' data-aos='slide-left' data-aos-once='true'><SiHtml5/></div>
+      <div className='python' data-aos='slide-left' data-aos-once='true'><SiPython/></div>
     </div>
   </div>
 );
