@@ -20,7 +20,7 @@ AOS.init({
 
 
 const About = () => (
-  <div className='about-grid'>
+  <div className='about-grid' id='about'>
     <div className='box-left'>
         <h3>About</h3>
         <p>My name is Daniel! I'm a Full Stack Web Developer from Phoenix, AZ. I love to dabble in various frontend and backend code and I'm always on the hunt for the latest and greatest technologies. I have a passion for tech and I strive to make the world a greater place by providing people with cutting-edge products that enrich their lives. I'm always looking to collaborate, 

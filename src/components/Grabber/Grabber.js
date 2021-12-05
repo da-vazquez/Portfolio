@@ -17,7 +17,7 @@ AOS.init({
 const Grabber = () => {
 
   return (
-      <div className='grabber-grid'>
+      <div className='grabber-grid' id='grabber'>
         <div className='grabber-left'>
           <div className='fa-tachometer-alt' data-aos='zoom-in' data-aos-once='true'><FaTachometerAlt/></div>
           <h3>Speed</h3>

@@ -13,7 +13,7 @@ const HeroSection = () => {
   }
 
   return (
-    <div className='hero-container'>
+    <div className='hero-container' id='home'>
       <h2>Daniel Vazquez</h2>
       <h4>Full Stack Web Developer</h4>
       <div className='hero-btns'>
