@@ -7,7 +7,7 @@
         "contact-text contact-form";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: #dadada;
+    background: transparent;
 }
 
 .contact-form {
@@ -15,19 +15,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     border-radius: 25px;
-    width: 60%;
-    height: 80%;
+    width: 80%;
+    height: 100%;
     color: white;
-    background-color: black;  
+    background: transparent; 
     align-self: center;
     justify-self: center;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
 }
 
 .text-items h2 {
-    color: #00ffff;
+    color: #cd00ff;
     padding: 10px;
     font-weight: 800;
     border-bottom: 16px dashed white;
@@ -43,18 +41,17 @@
 
 .contact-text {
     grid-area: contact-text;
-    background-color: #444444;
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: black; 
     width: 100%;
     height: 100%;
     font-family: 'Staatliches', cursive;
     font-size: 40px;
     letter-spacing: 2.5px;
-    border-right: 15px solid cyan;
+    border-right: 15px solid #cd00ff;
 }
     
 .submit-button {
@@ -69,25 +66,26 @@
     font-family: 'Staatliches', cursive;
     box-shadow: inset 0 0 8px rgba(252, 248, 248, 0.897);
     letter-spacing: 2.5px;
-    border: 6px solid #00ffff !important;
+    border: 6px solid #cd00ff !important;
     cursor: pointer;
     color: white;
 }
   
 .submit-button:hover {
-    border: 6px solid limegreen !important;
-    color: limegreen;
+    border: 6px solid white!important;
+    color: #cd00ff;
     transition: 300ms ease-in;
 }
   
   
 input {
     height: 15px;
-    width: 100%;
+    width: 99%;
     padding: 10px;
     border: none;
     font-family: 'Staatliches', cursive;
     letter-spacing: 1.5px;
+    border-radius: 15px;
 }
 
 #name, #phone, #email, #message {
@@ -110,7 +108,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 50%;
+    width: 100%;
     height: 80%;
 }
 
@@ -125,7 +123,6 @@ form {
             "contact-form";
         grid-template-columns: 1fr;
         grid-template-rows: .3333fr 1fr;
-        background-color: #444444;
     }
 
     .text-items {
@@ -136,7 +133,7 @@ form {
     }
 
     .text-items h2 {
-        color: #00ffff;
+        color: #cd00ff;
         padding: 16px;
         width: 95%;
         font-size: 40px;
@@ -198,39 +195,28 @@ form {
 
 
 @media screen and (max-width: 414px) {
-    .contact-section {
-        background-color: #444444;
+    .contact-form {
+        width: 100%;
+    }   
+
+    form {
+        width: 100%;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     #name, #phone, #email, #message {
-        font-size: 12px;
-    }
-
-    .contact-form {
-        width: 80%;
-        height: 80%;
+        width: 350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px;
     }
 
     .submit-button {
-        height: 50px;
-        width: 200px;
-        margin-left: 15px;
-    }
-
-    input {
-        height: 8px;
-    }
-
-    .text-items h2 {
-        color: #00ffff;
-        padding: 10px;
-        width: 95%;
-        font-size: 22px;
-        font-weight: 800;
-        border: none;
-    }
-
-    .fa-hand-point-right {
-        display: none;
+        width: 350px;
     }
 }

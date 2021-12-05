@@ -1,7 +1,7 @@
 .projects-container {
     width: 100%;
     height: 1100px;
-    background-color: lightgray;
+    background: transparent;
     color: white;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,6 @@
     letter-spacing: 2.0px;
 }
 
-
 .project-button {
   width: 180px;
   height: 35px;
@@ -21,9 +20,8 @@
   font-size: 32px;
   border-radius: 16px;
   margin-top: 80px;
-  background-color: darkgray;
   font-family: 'Staatliches', cursive;
-  border: 6px solid #00ffff !important;
+  border: 6px solid #cd00ff !important;
   color: white;
   letter-spacing: 3.5px;
   font-weight: 800;
@@ -34,10 +32,10 @@
 }
 
 .project-button:hover {
-  border: 6px solid limegreen !important;
-  color: limegreen;
+  border: 6px solid white !important;
+  color: #cd00ff;
   transition: 500ms ease-in;
-  background-color: white;
+  background-color: transparent;
 }
 
 .projects-grid {
@@ -49,7 +47,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     height: 100%;
-    width: 90%;
+    width: 95%;
 }
 
 .projects-grid > div {
@@ -61,13 +59,13 @@
     justify-content: flex-start;
     align-items: flex-end;
     filter: brightness(0.9);
-    
+    border-radius: 14px;
 }
 
 .projects-grid a {
     font-size: 1.5em;
     padding: 10px;
-    background-color: black;
+    background-color: #cd00ff;
     height: 40px;
     opacity: 0.7;
     min-width: 150px;
@@ -81,7 +79,6 @@
     opacity: 1.0;
     transition: 400ms;
 }
-
 
 .projects-grid > div:hover {
     transform: scale(1.025);
@@ -118,7 +115,6 @@
     .projects-container {
         width: 100%;
         height: 1100px;
-        background-color: lightgray;
         color: white;
         display: flex;
         justify-content: center;
@@ -151,7 +147,6 @@
         justify-content: center;
         font-size: 1em;
         padding: 10px;
-        background-color: black;
         height: 40px;
         opacity: 0.7;
         min-width: 150px;
@@ -177,9 +172,8 @@
         font-size: 32px;
         border-radius: 16px;
         margin-top: 80px;
-        background-color: darkgray;
         font-family: 'Staatliches', cursive;
-        border: 6px solid #00ffff !important;
+        border: 6px solid #cd00ff !important;
         color: white;
         letter-spacing: 3.5px;
         font-weight: 800;
@@ -190,10 +184,9 @@
       }
       
       .project-button:hover {
-        border: 6px solid limegreen !important;
-        color: limegreen;
+        border: 6px solid white !important;
+        color: #cd00ff;
         transition: 500ms ease-in;
-        background-color: white;
       }
 }
 
@@ -205,7 +198,7 @@
     }
 
     .project-button {
-        width: 100px;
+        width: 80%;
         font-size: 20px;
         margin-top: 50px;
     }
@@ -214,7 +207,7 @@
 
 @media screen and (max-width: 414px) {
     .project-button {
-        width: 80px;
+        width: 80%;
         font-size: 15px;
         margin-top: 30px;
     }

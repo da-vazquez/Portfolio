@@ -26,24 +26,24 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let response = await fetch("https://contact-server-dv.herokuapp.com/contact", {
-        method: "POST",
-        headers: {"Content-Type": "application/json;charset=utf-8",
+      let response = await fetch('https://contact-server-dv.herokuapp.com/contact', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json;charset=utf-8',
           },
           body: JSON.stringify(values),
         });
-        setSent("Message Sent!");
+        setSent('Message Sent!');
         
         let result = await response.json();
         console.log(result.status)
     }    
     catch (error) {
-      console.log("unable to send message", error.message)
+      console.log('unable to send message', error.message)
     }
   }
    
   return (
-    <div className="contact-section" id="contact">
+    <div className='contact-section'>
     <div className= 'contact-form'>
       <form onSubmit={handleSubmit}>
       <label className="form-label">Name:</label>
@@ -54,6 +54,7 @@ const ContactForm = () => {
         type='text'
         onChange={handleChange}
         value={values.name}
+        required='true'
       />
  
       <label className="form-label">Phone Number:</label>
@@ -64,9 +65,10 @@ const ContactForm = () => {
         type='text'
         onChange={handleChange}
         value={values.phone}
+        required='true'
       />
 
-      <label className="form-label">Email:</label>
+      <label className='form-label'>Email:</label>
       <input
         id='email'
         placeholder='enter email address'
@@ -74,9 +76,10 @@ const ContactForm = () => {
         type='email'
         onChange={handleChange}
         value={values.email}
+        required='true'
       />
 
-      <label className="form-label">Message:</label>
+      <label className='form-label'>Message:</label>
       <input
         id='message'
         placeholder='enter message'
@@ -84,6 +87,7 @@ const ContactForm = () => {
         type='text'
         onChange={handleChange}
         value={values.message}
+        required='true'
       />
 
       <button className='submit-button' type='submit'>{sent}</button>
@@ -92,7 +96,7 @@ const ContactForm = () => {
 
     <div className='contact-text'>
     <div className='text-items'>
-    <div className="fa-hand-point-right" data-aos="slide-right" data-aos-once="true"><FaHandPointRight/></div>
+    <div className="fa-hand-point-right" data-aos='slide-right' data-aos-once='true'><FaHandPointRight/></div>
       <h2>I'd love to hear from you</h2>
       </div>
     </div>
