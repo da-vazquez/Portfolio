@@ -1,6 +1,5 @@
 import React from 'react';
 import "./App.css";
-import { BrowserRouter as Router } from 'react-router-dom';
 //components
 import Nav from './components/Nav/Nav';
 import HeroSection from './components/HeroSection/HeroSection.js';
@@ -14,7 +13,6 @@ import Footer from './components/Footer/footer';
 function App() {
   return (
     <div className='App'>
-      <Router>
       <Nav />
       <HeroSection />
       <About/>
@@ -22,7 +20,6 @@ function App() {
       <Grabber/>
       <Contact/>
       <Footer/>
-    </Router>
   </div>
   );
 }
