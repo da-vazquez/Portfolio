@@ -16,7 +16,7 @@
 }
 
 strong {
-  color: #cd00ff;
+  color: #a26eff;
   margin-right: 2px;
 }
 
@@ -31,18 +31,18 @@ strong {
 }
 
 #github:hover, #linkedin:hover, #medium:hover {
-  color: #cd00ff;
+  color: #a26eff;
   transform: scale(1.25);
   transition: 500ms;
 }
 
 
 @media screen and (max-width: 414px) {
-  .footer {
-    padding: 10px;
-  }
+.footer {
+  padding: 0px;
+}
 
-  .footer-content p {
-    font-size: 14px;
+.footer-content p {
+  font-size: 14px;
   }
 }

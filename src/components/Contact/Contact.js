@@ -54,7 +54,7 @@ const ContactForm = () => {
         type='text'
         onChange={handleChange}
         value={values.name}
-        required='true'
+        required={true}
       />
  
       <label className="form-label">Phone Number:</label>
@@ -65,7 +65,7 @@ const ContactForm = () => {
         type='text'
         onChange={handleChange}
         value={values.phone}
-        required='true'
+        required={true}
       />
 
       <label className='form-label'>Email:</label>
@@ -76,7 +76,7 @@ const ContactForm = () => {
         type='email'
         onChange={handleChange}
         value={values.email}
-        required='true'
+        required={true}
       />
 
       <label className='form-label'>Message:</label>
@@ -87,7 +87,7 @@ const ContactForm = () => {
         type='text'
         onChange={handleChange}
         value={values.message}
-        required='true'
+        required={true}
       />
 
       <button className='submit-button' type='submit'>{sent}</button>

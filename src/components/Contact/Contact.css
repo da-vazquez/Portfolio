@@ -1,222 +1,218 @@
 .contact-section {
-    display: grid;
-    width: 100%;
-    height: 60vh;
-    grid-template-areas:
-        "contact-text contact-form"
-        "contact-text contact-form";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background: transparent;
+  display: grid;
+  width: 100%;
+  height: 60vh;
+  grid-template-areas:
+    "contact-text contact-form"
+    "contact-text contact-form";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background: transparent;
 }
 
 .contact-form {
-    grid-area: contact-form;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 25px;
-    width: 80%;
-    height: 100%;
-    color: white;
-    background: transparent; 
-    align-self: center;
-    justify-self: center;
+  grid-area: contact-form;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  width: 80%;
+  height: 100%;
+  color: white;
+  background: transparent; 
+  align-self: center;
+  justify-self: center;
 }
 
 .text-items h2 {
-    color: #cd00ff;
-    padding: 10px;
-    font-weight: 800;
-    border-bottom: 16px dashed white;
+  color: #a26eff;
+  padding: 10px;
+  font-weight: 800;
+  border-bottom: 16px dashed white;
 }
 
 .fa-hand-point-right {
-    display: flex;
-    justify-content: center;
-    font-size: 180px;
-    color: white;
-    margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 180px;
+  color: white;
+  margin-left: 10px;
 }
 
 .contact-text {
-    grid-area: contact-text;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    font-family: 'Staatliches', cursive;
-    font-size: 40px;
-    letter-spacing: 2.5px;
-    border-right: 15px solid #cd00ff;
+  grid-area: contact-text;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-family: 'Staatliches', cursive;
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  border-right: 15px solid #a26eff;
 }
     
 .submit-button {
-    height: 50px;
-    width: 250px;
-    margin-top: 35px;
-    align-self: center;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: transparent;
-    font-family: 'Staatliches', cursive;
-    box-shadow: inset 0 0 8px rgba(252, 248, 248, 0.897);
-    letter-spacing: 2.5px;
-    border: 6px solid #cd00ff !important;
-    cursor: pointer;
-    color: white;
+  height: 50px;
+  width: 250px;
+  margin-top: 35px;
+  align-self: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: transparent;
+  font-family: 'Staatliches', cursive;
+  box-shadow: inset 0 0 8px rgba(252, 248, 248, 0.897);
+  letter-spacing: 2.5px;
+  border: 6px solid #a26eff;
+  cursor: pointer;
+  color: white;
 }
   
 .submit-button:hover {
-    border: 6px solid white!important;
-    color: #cd00ff;
-    transition: 300ms ease-in;
+  border: 6px solid white!important;
+  color: #a26eff;
+  transition: 300ms ease-in;
 }
   
-  
 input {
-    height: 15px;
-    width: 99%;
-    padding: 10px;
-    border: none;
-    font-family: 'Staatliches', cursive;
-    letter-spacing: 1.5px;
-    border-radius: 15px;
+  height: 15px;
+  width: 99%;
+  padding: 10px;
+  border: none;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1.5px;
+  border-radius: 15px;
 }
 
 #name, #phone, #email, #message {
-    font-size: 18px;
-    font-family: sans-serif !important;
-    background-color: white;
+  font-size: 18px;
+  font-family: sans-serif !important;
+  background-color: white;
 }
   
 .form-label {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    margin-bottom: 0;
-    padding: 0;
-    font-family: 'Staatliches', cursive;
-    letter-spacing: 2.5px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 2.5px;
 }
   
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
 }
-
 
 @media screen and (max-width: 1400px) {
-    .contact-section {
-        display: grid;
-        width: 100%;
-        height: 100vh;
-        grid-template-areas:
-            "contact-text"
-            "contact-form";
-        grid-template-columns: 1fr;
-        grid-template-rows: .3333fr 1fr;
-    }
-
-    .text-items {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .text-items h2 {
-        color: #cd00ff;
-        padding: 16px;
-        width: 95%;
-        font-size: 40px;
-        font-weight: 800;
-        border: none;
-    }
-
-    .fa-hand-point-right {
-        transform: rotate(90deg);
-    }
-
-    #name, #phone, #email, #message {
-        font-size: 18px;
-        font-family: sans-serif !important;
-        background-color: white;
-    }
-      
-    .form-label {
-        display: flex;
-        justify-content: center;
-        font-size: 18px;
-        margin-bottom: 0;
-        padding: 0;
-        font-family: 'Staatliches', cursive;
-        letter-spacing: 1.5px;
-    }
-      
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 55%;
-        height: 90%;
-    }
-
-    .contact-form {
-        width: 50%;
-        height: 60%;
-    }
+.contact-section {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-areas:
+    "contact-text"
+    "contact-form";
+  grid-template-columns: 1fr;
+  grid-template-rows: .3333fr 1fr;
 }
 
+.text-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-items h2 {
+  color: #a26eff;
+  padding: 16px;
+  width: 95%;
+  font-size: 40px;
+  font-weight: 800;
+  border: none;
+}
+
+.fa-hand-point-right {
+  transform: rotate(90deg);
+}
+
+#name, #phone, #email, #message {
+  font-size: 18px;
+  font-family: sans-serif !important;
+  background-color: white;
+}
+      
+.form-label {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 0;
+  padding: 0;
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1.5px;
+}
+      
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 55%;
+  height: 90%;
+}
+
+.contact-form {
+  width: 50%;
+  height: 60%;
+  }
+}
 
 @media screen and (max-width: 850px) {
-    #name, #phone, #email, #message {
-        font-size: 14px;
-        font-family: sans-serif !important;
-        background-color: white;
-    }
-
-    .contact-form {
-        width: 80%;
-        height: 90%; 
-    }
-
-    .fa-hand-point-right {
-        display: none;
-    }
+#name, #phone, #email, #message {
+  font-size: 14px;
+  font-family: sans-serif !important;
+  background-color: white;
 }
 
+.contact-form {
+  width: 80%;
+  height: 90%; 
+}
+
+.fa-hand-point-right {
+  display: none;
+  }
+}
 
 @media screen and (max-width: 414px) {
-    .contact-form {
-        width: 100%;
-    }   
+.contact-form {
+  width: 100%;
+}   
 
-    form {
-        width: 100%;
-    }
+form {
+  width: 100%;
+}
 
-    h2 {
-        text-align: center;
-    }
+h2 {
+  text-align: center;
+}
 
-    #name, #phone, #email, #message {
-        width: 350px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0px;
-    }
+#name, #phone, #email, #message {
+  width: 350px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
 
-    .submit-button {
-        width: 350px;
-    }
+.submit-button {
+  width: 350px;
+  }
 }

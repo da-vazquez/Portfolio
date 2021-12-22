@@ -1,321 +1,307 @@
 .about-grid {
-    height: 700px;
-    display: grid;
-    grid-template-areas: 
-      "box-left box-left box-right box-right"
-      "box-left box-left box-right box-right"
-      "box-left box-left box-right box-right";
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    z-index: 1000;
-  }
-  
-  .about-grid > * {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    filter: brightness(0.9)
-  }
-  
-  .box-left {
-    grid-area: box-left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 45px;
-    background: transparent;
-  }
+  height: 700px;
+  margin-left: 60px;
+  margin-right: 60px;
+  display: grid;
+  grid-template-areas: 
+    "box-left box-left box-right box-right"
+    "box-left box-left box-right box-right"
+    "box-left box-left box-right box-right";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  z-index: 1000;
+}
 
-  .box-left h3 {
-    font-size: 35px;
-    color: #cd00ff;
-    font-weight: 800;
-    font-family: sans-serif;
-    width: 210px;
-    letter-spacing: 2.5px;
-    margin-bottom: 0;
+.about-grid > * {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+  
+.box-left {
+  grid-area: box-left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px;
+  background: transparent;
+}
+
+.box-left h3 {
+  font-size: 35px;
+  color: #a26eff;
+  font-weight: 800;
+  font-family: sans-serif;
+  width: 210px;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;  
+}
+
+.box-left p {
+  font-size: 22px;
+  font-family: sans-serif;
+  text-align: left;
+  color: white;
+  margin-top: 8px;
+  line-height: 1.5;
+  font-weight: 800;
+}
+  
+.box-right {
+  grid-area: box-right;
+  display: grid;
+  padding: 20px;
+  grid-template-areas: 
+    "javascript react node github"
+    "postgres html5 css3 python";
+  grid-auto-rows: auto(4, 1fr);
+  grid-auto-columns: auto(4, 1fr);
+  background: transparent;
+}
+
+.box-right > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 150px;
+  color: white;
+  border: none;
+}
+
+.box-right > div:hover {
+  color: #a26eff;
+  transform: scale(1.3);
+  transition: 800ms ease-out !important;
+}
+
+.js {
+  grid-area: javascript;
+}
+
+.react {
+  grid-area: react;
+}
+  
+.node {
+  grid-area: node;
+}
+
+.github {
+  grid-area: github;
+}
+
+.postgres {
+  grid-area: postgres;
+}
+
+.html5 {
+  grid-area: html5; 
+}
+
+.css3 {
+  grid-area: css3;
+}
+
+.python {
+  grid-area: python;
+}
+
+@media screen and (max-width: 1170px) {
+.box-left p {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: left;
+  width: 95%;
+  margin-top: 8px;
+}
+  
+.box-left {
+  grid-area: box-left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 14px;
+  width: 100%;
+}
     
-  }
-
-  .box-left p {
-    font-size: 22px;
-    font-family: sans-serif;
-    text-align: left;
-    color: white;
-    margin-top: 8px;
-    line-height: 1.5;
-    font-weight: 800;
-  }
+.box-left h3 {
+  font-size: 20px;
+  color: #a26eff;
+  font-weight: 800;
+  font-family: sans-serif;
+  width: 210px;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+  text-align: left;
+}
   
-  .box-right {
-    grid-area: box-right;
-    display: grid;
-    padding: 20px;
-    grid-template-areas: 
-      "javascript react node github"
-      "postgres html5 css3 python";
-    grid-auto-rows: auto(4, 1fr);
-    grid-auto-columns: auto(4, 1fr);
-    background: transparent;
+.box-right {
+  padding: 10px;
+  width: 100%;
+}
+  
+.box-right > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: white;
+  border: none;
+}
+  
+.about-grid {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+    "box-left"
+    "box-right";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;;
+  z-index: 1000;
   }
-
-  .box-right > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 150px;
-    color: white;
-    border: none;
-  }
-
-  .box-right > div:hover {
-    color: #cd00ff;
-    transform: scale(1.3);
-    transition: 800ms ease-out !important;
-  }
-
-
-  .js {
-    grid-area: javascript;
-  }
-
-  .react {
-    grid-area: react;
-  }
-
-  .node {
-    grid-area: node;
-  }
-
-  .github {
-    grid-area: github;
-  }
-
-  .postgres {
-    grid-area: postgres;
-  }
-
-  .html5 {
-    grid-area: html5; 
-  }
-
-  .css3 {
-    grid-area: css3;
-  }
-
-  .python {
-    grid-area: python;
-  }
-
+}
 
 @media screen and (max-width: 850px) {
-  .about-grid {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-areas: 
-      "box-left"
-      "box-right";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;;
-    z-index: 1000;
-  }
+.about-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: 
+    "box-left"
+    "box-right";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;;
+  z-index: 1000;
+  margin: 0px;
+}
 
-  .box-left {
-    grid-area: box-left;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px;
-  }
-  
-  .box-left p {
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: left;
-    width: 550px;
-    margin-top: 8px;
-  }
+.box-left {
+  grid-area: box-left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 15px;
+}
 
-  .box-right {
-    grid-area: box-right;
-    display: grid;
-    grid-gap: 40px;
-    padding: 100px;
-    grid-template-areas: 
-      "javascript react" 
-      "node github"
-      "postgres html5"
-       "css3 python";
-    grid-auto-rows: auto(4, 1fr);
-    grid-auto-columns: auto(2, 1fr);
+.box-left p {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: left;
+  width: 550px;
+  margin-top: 8px;
+}
+
+.box-right {
+  grid-area: box-right;
+  display: grid;
+  grid-gap: 40px;
+  padding: 100px;
+  grid-template-areas: 
+    "javascript react" 
+    "node github"
+    "postgres html5"
+    "css3 python";
+  grid-auto-rows: auto(4, 1fr);
+  grid-auto-columns: auto(2, 1fr);
   }
 }
 
 @media screen and (max-width: 550px) {
-  .box-left p {
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: left;
-    width: 350px;
-    margin-top: 8px;
-  }
+.box-left p {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: left;
+  width: 350px;
+  margin-top: 8px;
+}
 
-  .box-left {
-    grid-area: box-left;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 14px; 
-  }
+.box-left {
+  grid-area: box-left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 14px; 
+}
 
-  .box-left h3 {
-    font-size: 25px;
-    color: #00ffff;
-    font-weight: 800;
-    font-family: sans-serif;
-    width: 210px;
-    letter-spacing: 2.5px;
-    margin-bottom: 0;
-    text-align: left;
-  }
+.box-left h3 {
+  font-size: 25px;
+  color: #a26eff;
+  font-weight: 800;
+  font-family: sans-serif;
+  width: 210px;
+  letter-spacing: 2.5px;
+  margin-bottom: 0;
+  text-align: left;
+}
 
-  .box-right {
-    padding: 10px;
-    width: 100%;
-  }
+.box-right {
+  padding: 20px;
+  width: 100%;
+}
 
-  .box-right > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 80px;
-    color: white;
-    border: none;
-  }
+.box-right > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: white;
+  border: none;
+}
 
-  .about-grid {
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-areas: 
-      "box-left"
-      "box-right";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;;
-    z-index: 1000;
+.about-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: 
+    "box-left"
+    "box-right";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;;
+  z-index: 1000;
   }
 }
 
-@media screen and (max-width: 360px) {
-  .box-left p {
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: center;
-    width: 90% !important;
-    margin-top: 8px;
-  }
-
-  .box-left {
-    grid-area: box-left;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 14px;
-    width: 100%;
-  }
-
-  .box-left h3 {
-    font-size: 24px !important;
-    color: #cd00ff;
-    font-weight: 800;
-    font-family: sans-serif;
-    letter-spacing: 2.5px;
-    margin-bottom: 0;
-    text-align: left;
-  }
-
-  .box-right {
-    padding: 5px;
-    width: 100%;
-  }
-
-  .box-right > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 80px !important;
-    width: 90% !important;
-    border: none;
-  }
-
-  .about-grid {
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-      "box-left"
-      "box-right";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;;
-    z-index: 1000;
-  }
+@media screen and (max-width: 400px) {
+.box-left p {
+  text-align: center;
+  width: 90%;
 }
 
-@media screen and (max-width: 1170px) {
-  .box-left p {
-    font-size: 20px;
-    font-family: sans-serif;
-    text-align: left;
-    width: 95%;
-    margin-top: 8px;
-  }
+.box-left {
+  grid-area: box-left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 14px;
+  width: 100%;
+}
 
-  .box-left {
-    grid-area: box-left;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 14px;
-    width: 100%;
-  }
+.box-right {
+  padding: 5px;
+  width: 100%;
+}
 
-  .box-left h3 {
-    font-size: 20px;
-    color: #cd00ff;
-    font-weight: 800;
-    font-family: sans-serif;
-    width: 210px;
-    letter-spacing: 2.5px;
-    margin-bottom: 0;
-    text-align: left;
-  }
+.box-right > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px !important;
+  width: 90% !important;
+  border: none;
+}
 
-  .box-right {
-    padding: 10px;
-    width: 100%;
-  }
-
-  .box-right > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 80px;
-    color: white;
-    border: none;
-  }
-
-  .about-grid {
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-      "box-left"
-      "box-right";
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;;
-    z-index: 1000;
+.about-grid {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+    "box-left"
+    "box-right";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;;
+  z-index: 1000;
   }
 }
