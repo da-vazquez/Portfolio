@@ -1,17 +1,18 @@
+@import "../HeroSection/HeroSection.css";
+
 .nav-wrap {
   display: flex;
   width: 100%;
-  height: 45px;
-  position: sticky;
-  top: 0;
-  z-index: 1;
+  padding: 20px 20px;
+  height: 2.5em;
   border: none;
-  background-color: #673ab7;
+  background-color: transparent;
+  
 }
 
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0;
   width: 100%;
@@ -25,20 +26,29 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-left: 5px;
-  width: 120px;
-  font-size: 18px;
+  font-weight: 800;
+  width: 90px;
+  font-size: 12px;
   background-color: transparent;
-  color: white;
+  color: #24c522;
+  letter-spacing: 1.5px;
   cursor: pointer;
-  border: none;
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nav-link:hover {
-  border-bottom: 4px solid white;
-  transition: 150ms ease-in;
+  animation:  flashing 600ms forwards;
+}
+
+@keyframes flashing {
+  50% {
+    
+  }
+  100% {
+    box-shadow: 0px 0px 5px 5px #048202;
+    color: white;
+  }
 }
 
 .bars {
@@ -53,13 +63,14 @@
 
 
 /* Mobile navbar active */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 .nav {
   display: none;
 }
 
 .nav-wrap {
-  opacity: 0.9;
+  padding: 0;
+  background-color: black;
 }
   
 .nav button {
@@ -72,7 +83,8 @@
 
 .nav-mobile {
   display: grid;
-  height: 400px;
+  opacity: 0.8;
+  height: 440px;
   width: 100%;
   grid-gap: 0px;
   grid-template-areas: 
@@ -84,15 +96,7 @@
     "link-5";
   grid-template-columns: 1fr;
   grid-template-rows: .5fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.nav-mobile > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: sans-serif;
-  border: none;
-  text-transform: uppercase;
+  z-index: 100;
 }
 
 .nav-mobile button:focus {
@@ -114,6 +118,10 @@
   font-size: 25px;
 }
 
+.fa-bars:active .profile-image img {
+  border: 10px solid red;
+}
+
 .bars {
   grid-area: bars;
   display: flex;
@@ -121,7 +129,7 @@
   justify-content: center;
 }
 
-.link-1 {
+.nav-mobile .link-1 {
   grid-area: link-1;
   display: flex;
   align-items: center;
@@ -131,13 +139,13 @@
   font-size: 18px;
   text-transform: uppercase;
   border: 5px solid black;
-  color: white;
+  color: var(--mainColor);
   background-color: black;
   cursor: pointer;
   font-family: sans-serif;
 }
 
-.link-2 {
+.nav-mobile .link-2 {
   grid-area: link-2;
   display: flex;
   align-items: center;
@@ -147,13 +155,14 @@
   font-size: 18px;
   text-transform: uppercase;
   border: 5px solid black;
-  color: white;
+  color: var(--mainColor);
   background-color: black;
   cursor: pointer;
   font-family: sans-serif;
+  
 }
 
-.link-3 {
+.nav-mobile .link-3 {
   grid-area: link-3;
   display: flex;
   align-items: center;
@@ -163,13 +172,13 @@
   font-size: 18px;
   text-transform: uppercase;
   border: 5px solid black;
-  color: white;
+  color: var(--mainColor);
   background-color: black;
   cursor: pointer;
   font-family: sans-serif;
 }
 
-.link-4 {
+.nav-mobile .link-4 {
   grid-area: link-4;
   display: flex;
   align-items: center;
@@ -179,13 +188,13 @@
   font-size: 18px;
   text-transform: uppercase;
   border: 5px solid black;
-  color: white;
+  color: var(--mainColor);
   background-color: black;
   cursor: pointer;
   font-family: sans-serif;
 }
 
-.link-5 {
+.nav-mobile .link-5 {
   grid-area: link-5;
   display: flex;
   align-items: center;
@@ -195,7 +204,7 @@
   font-size: 18px;
   text-transform: uppercase;
   border: 5px solid black;
-  color: white;
+  color: var(--mainColor);
   background-color: black;
   cursor: pointer;
   font-family: sans-serif;

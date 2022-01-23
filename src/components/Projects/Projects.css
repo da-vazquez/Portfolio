@@ -1,7 +1,11 @@
+:root {
+  --mainColor: #24c522;
+}
+
 .projects-container {
   width: 95%;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   height: 1100px;
   background: transparent;
   color: white;
@@ -18,12 +22,12 @@
 .project-button {
   width: 180px;
   height: 35px;
-  padding: 10px 14px;
-  font-size: 32px;
+  padding: 8px 14px;
+  font-size: 20px;
   border-radius: 16px;
   margin-top: 80px;
   font-family: 'Staatliches', cursive;
-  border: 6px solid #a26eff;
+  border: 6px solid var(--mainColor);
   color: white;
   letter-spacing: 3.5px;
   font-weight: 800;
@@ -34,10 +38,9 @@
 }
 
 .project-button:hover {
-  border: 6px solid white !important;
-  color: #a26eff;
-  transition: 500ms ease-in;
-  background-color: transparent;
+  color: var(--mainColor);
+  font-weight: 800;
+  transition: 300ms ease-in;
 }
 
 .projects-grid {
@@ -49,7 +52,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   height: 100%;
-  width: 95%;
+  width: 100%;
 }
 
 .projects-grid > div {
@@ -69,9 +72,8 @@
   font-size: 1.5em;
   font-weight: 800;
   padding: 10px;
-  background-color: #673ab7;
+  background-color: black;
   height: 40px;
-  opacity: 0.7;
   width: 100%;
   text-align: center;
   cursor: pointer;
@@ -164,7 +166,6 @@
   font-size: 1em;
   padding: 10px;
   height: 40px;
-  opacity: 0.7;
   min-width: 150px;
   text-align: center;
   cursor: pointer;
@@ -189,7 +190,7 @@
   border-radius: 16px;
   margin-top: 80px;
   font-family: 'Staatliches', cursive;
-  border: 6px solid #a26eff !important;
+  border: 6px solid var(--mainColor) !important;
   color: white;
   letter-spacing: 3.5px;
   font-weight: 800;
@@ -201,7 +202,7 @@
       
 .project-button:hover {
   border: 6px solid white !important;
-  color: #a26eff;
+  color: var(--mainColor);
   transition: 500ms ease-in;
   }
 }

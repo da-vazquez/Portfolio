@@ -1,3 +1,7 @@
+:root {
+  --mainColor: #24c522;
+}
+
 .contact-section {
   display: grid;
   width: 100%;
@@ -25,7 +29,7 @@
 }
 
 .text-items h2 {
-  color: #a26eff;
+  color: var(--mainColor);
   padding: 10px;
   font-weight: 800;
   border-bottom: 16px dashed white;
@@ -34,7 +38,7 @@
 .fa-hand-point-right {
   display: flex;
   justify-content: center;
-  font-size: 180px;
+  font-size: 150px;
   color: white;
   margin-left: 10px;
 }
@@ -49,9 +53,9 @@
   width: 100%;
   height: 100%;
   font-family: 'Staatliches', cursive;
-  font-size: 40px;
+  font-size: 20px;
   letter-spacing: 2.5px;
-  border-right: 15px solid #a26eff;
+  border-right: 15px solid var(--mainColor);
 }
     
 .submit-button {
@@ -66,14 +70,14 @@
   font-family: 'Staatliches', cursive;
   box-shadow: inset 0 0 8px rgba(252, 248, 248, 0.897);
   letter-spacing: 2.5px;
-  border: 6px solid #a26eff;
+  border: 6px solid var(--mainColor);
   cursor: pointer;
   color: white;
 }
   
 .submit-button:hover {
   border: 6px solid white!important;
-  color: #a26eff;
+  color: var(--mainColor);
   transition: 300ms ease-in;
 }
   
@@ -96,7 +100,7 @@ input {
 .form-label {
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 0;
   padding: 0;
   font-family: 'Staatliches', cursive;
@@ -131,7 +135,7 @@ form {
 }
 
 .text-items h2 {
-  color: #a26eff;
+  color: var(--mainColor);
   padding: 16px;
   width: 95%;
   font-size: 40px;
@@ -170,6 +174,12 @@ form {
 .contact-form {
   width: 50%;
   height: 60%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .fa-hand-point-right {
+    transform: rotate(180deg);
   }
 }
 

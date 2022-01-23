@@ -1,13 +1,15 @@
 html, body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .App {
-  background: linear-gradient(90deg, rgb(57 9 66) 0%, hsl(263deg 44% 8%) 30%);
+  background: #0a192f;
+  -webkit-font-smoothing: antialiased;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 124px) {
 html, body {
   overflow-x: hidden;
   }
