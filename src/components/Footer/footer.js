@@ -11,7 +11,7 @@ const Footer = () => {
   return (
   <div className='footer'>
     <div className='footer-content'>
-      <p><strong>&copy;</strong>Daniel Vazquez 2021,  All rights reserved.</p>
+      <p><strong>&copy;</strong>Daniel Vazquez 2022,  All rights reserved.</p>
       <div className='footer-icons-wrapper'>
         <a href="https://github.com/da-vazquez" target='_blank' rel='noopener noreferrer'>
           <FaGithub id='github'/></a>
