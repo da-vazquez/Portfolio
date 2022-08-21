@@ -12,7 +12,7 @@ import {
   SiCss3,
   SiPython
  } from 'react-icons/si';
-
+ 
 AOS.init({
   duration: 1000,
   easing: 'ease-in-out-back'

@@ -1,14 +1,9 @@
 import React from 'react';
-import { withTransaction } from '@elastic/apm-rum-react'
+import { ApmRoute } from '@elastic/apm-rum-react'
+import { Redirect } from 'react-router-dom';
 import "./App.css";
 //components
-import Nav from './components/Nav/Nav';
-import HeroSection from './components/HeroSection/HeroSection.js';
-import About from './components/About/About.js';
-import Projects from './components/Projects/Projects.js';
-import Grabber from './components/Grabber/Grabber';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/footer';
+import Home from './components/Home/Home';
 
 import { init as initApm } from '@elastic/apm-rum'
 
@@ -16,21 +11,23 @@ const apm = initApm({
   serviceName: 'portfolio-dv',
   serverUrl: process.env.REACT_APP_APM_SERVER_URL,
   serviceVersion: '1.0',
+  environment: 'production',
   active: true
 })
 
 function App() {
   return (
     <div className='App'>
-      <Nav />
-      <HeroSection />
-      <About/>
-      <Projects/>
-      <Grabber/>
-      <Contact/>
-      <Footer/>
+      <ApmRoute
+          exact
+          path="/"
+          component={() => (
+            <Redirect to={{pathname: '/home'}}/>
+          )}
+        />
+        <ApmRoute path="/home" component={Home}/>
   </div>
   );
 }
 
-export default withTransaction('AppComponent', 'component')(App);
+export default App;
