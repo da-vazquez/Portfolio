@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import { 
   SiJavascript,
   SiReact,
-  SiNodeDotJs,
+  SiNodedotjs,
   SiGithub,
   SiPostgresql,
   SiHtml5,
@@ -33,7 +33,7 @@ const About = () => (
     <div className='box-right'>
       <div className='js' data-aos='slide-left' data-aos-once='true'><SiJavascript/></div>
       <div className='react' data-aos='slide-left' data-aos-once='true'><SiReact/></div>
-      <div className='node' data-aos='slide-left' data-aos-once='true'><SiNodeDotJs/></div>
+      <div className='node' data-aos='slide-left' data-aos-once='true'><SiNodedotjs/></div>
       <div className='github' data-aos='slide-left' data-aos-once='true'><SiGithub/></div>
       <div className='postgres' data-aos='slide-left' data-aos-once='true'><SiPostgresql/></div>
       <div className='css3' data-aos='slide-left' data-aos-once='true'><SiCss3/></div>
