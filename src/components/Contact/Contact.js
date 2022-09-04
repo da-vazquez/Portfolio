@@ -35,7 +35,8 @@ const ContactForm = () => {
         setSent('Message Sent!');
         
         let result = await response.json();
-        console.log(result.status)
+        console.log(result.status);
+        setValues(initialValues);
     }    
     catch (error) {
       console.log('unable to send message', error.message)

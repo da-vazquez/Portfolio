@@ -1,13 +1,15 @@
-# Portolio Site
+## Portolio Site
 
-##Tech Stack:
+### Tech Stack:
 
 React, Javascript, CSS
 
-##Dependencies
+### Dependencies
 
 React-Router-Dom, React-Scroll, React-Icons, AOS
 
-##View deployed App on Heroku:
+### View deployed App here:
 
-https://da-vazquez.herokuapp.com/
+```
+https://vaztech.co/
+```

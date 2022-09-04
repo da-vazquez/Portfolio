@@ -37,6 +37,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.nav-link:nth-child(5) {
+  color: #ffff00;
+}
+
 .nav-link:hover {
   animation:  flashing 600ms forwards;
 }
